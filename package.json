@@ -6,9 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-live-server": "0.0.30",
-    "gulp-sass": "^2.3.2",
-    "gulp-sourcemaps": "^1.6.0"
+    "gulp-live-server": "0.0.30"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
