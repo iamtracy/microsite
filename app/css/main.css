@@ -116,18 +116,13 @@ Top Banner
   padding: 4.5rem 0 .5rem;
 }
 .bg-info {
-    background:linear-gradient(rgba(0, 121 ,193 , .625), rgba(0, 121 ,193 , .625)), url("../img/banner.jpg"); 
+    background:linear-gradient(rgba(0, 121 ,193 , .625), rgba(0, 121 ,193 , .625)), url("https://presentations.inxpo.com/Shows/CNBC/iCONIC-Boston/cnbc/app/img/banner.jpg"); 
     background-color: rgba(25, 159, 206, 0.75);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-position: 60% 91%;    
 }
-/*.register-now{
-  color: #fff;
-  border-color: #fff;
-  background: #272524;
-}*/
 .register-now{
   color: #d0dd28;
   border-color: #d0dd28;
