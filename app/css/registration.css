@@ -1,0 +1,44 @@
+/*Reg Fields
+***********************/
+input,
+select {
+    background-color: #eaeaea;
+    padding: 0.8em;
+    margin: 0.4em 0;
+    font-size: 16px;
+    line-height: 16px;
+    border: 0;
+    color: #565a5c;
+    vertical-align: middle;
+    max-width: 250px;
+    width: 100%;
+    padding: 13px;
+    border-radius: 4px;
+}
+div[labelcell="1"] {
+    clear: both;
+    display: block;
+    margin: 1rem 0;
+}
+input:focus,
+select:focus {
+    border: 1px solid #e11075;
+}
+input[type="submit"] {
+    -webkit-appearance: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: #0079c1;
+    width: 111%;
+    padding: 1em 0;
+    margin: 40px auto;
+    border: none;
+    cursor: pointer;
+}
+select{
+    width: 111%;
+}
+input[name="EMailAddress"]{
+    background-image: none !important;
+}

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CNBC Boston</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400i,500i,700i" rel="stylesheet"> -->
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<!-- AFFILIATE SCRIPT -->
+	<script type="text/javascript" src="https://vts.inxpo.com/cfr/scripts/XBrowser.js"></script>
+	<script type="text/javascript">
+
+	  var g_AffiliateData = GetURLParamValue("AffiliateData");
+	  
+	  /********UPDATE QUICK REGISTRATION LINK BETWEEN SINGLE QUOTES********/
+	  var g_iFrameRegUrlSrc = 'https://vts.inxpo.com/scripts/Server.nxp?LASCmd=AI:4;F:QS!10100&ShowKey=33176&GroupID=iCONIC';
+	  var g_iFrameRegFinalUrlSrc = g_iFrameRegUrlSrc + '&AffiliateData=' + g_AffiliateData;
+	  
+	  var g_HomeUrlSrc = 'home.html';
+	  var g_HomeFinalUrlSrc = g_HomeUrlSrc + '?AffiliateData=' + g_AffiliateData;
+
+
+	  // var g_SpeakersUrlSrc = 'OnDemand.html';
+	  // var g_SpeakersFinalUrlSrc = g_SpeakersUrlSrc + '?AffiliateData=' + g_AffiliateData;
+
+	  // // var g_SponsorsUrlSrc = 'LoginPage.html';
+	  // // var g_SponsorsFinalUrlSrc = g_SponsorsUrlSrc + '?AffiliateData=' + g_AffiliateData;
+	  
+	  // var g_LegalUrlSrc = 'LegalNotice.html';
+	  // var g_LegalFinalUrlSrc = g_LegalUrlSrc + '?AffiliateData=' + g_AffiliateData;
+
+	  var g_RegistrationUrlSrc = 'https://vts.inxpo.com/scripts/Server.nxp?LASCmd=AI:4;F:QS!10100&ShowKey=33176&GroupID=iCONIC';
+	  var g_RegistrationFinalUrlSrc = g_RegistrationUrlSrc + '?AffiliateData=' + g_AffiliateData;
+
+	  
+	  function window_onload()
+	  {
+	    if (g_AffiliateData == ""){  
+	    document.getElementById("QRegFrame").src = g_iFrameRegUrlSrc;
+	    // document.getElementById("OverviewLink").href = g_HomeUrlSrc;
+	    // document.getElementById("OverviewLinkLogo").href = g_HomeUrlSrc;
+	    // document.getElementById("AgendaLink").href = g_AgendaUrlSrc;
+	    // document.getElementById("SpeakersLink").href = g_SpeakersUrlSrc;
+	    // document.getElementById("SponsorsLink").href = g_SponsorsUrlSrc;
+	    // document.getElementById("FAQLink").href = g_FAQUrlSrc;
+	    // document.getElementById("LegalLink").href = g_LegalUrlSrc;
+	    document.getElementById("RegLinkNav").href = g_RegistrationUrlSrc;
+		document.getElementById("RegLinkBanner").href = g_RegistrationUrlSrc;
+	    }
+	    else{
+	    document.getElementById("QRegFrame").src = g_iFrameRegFinalUrlSrc;
+	    //document.getElementById("OverviewLink").href = g_HomeFinalUrlSrc;
+	    //document.getElementById("OverviewLinkLogo").href = g_HomeFinalUrlSrc;
+	    //document.getElementById("SponsorsLink").href = g_SponsorsFinalUrlSrc;
+	    //document.getElementById("LegalLink").href = g_LegalFinalUrlSrc;
+	    document.getElementById("RegLinkNav").href = g_RegistrationUrlSrc;
+		document.getElementById("RegLinkBanner").href = g_RegistrationUrlSrc;         
+	    }
+	  }
+	</script>
+	<!-- END AFFILIATE SCRIPT -->
+</head>
+<body onload="window_onload()" data-spy="scroll" data-target=".navbar" id="home" data-offset="115">
+	<nav class="navbar navbar-dark nav-color navbar-fixed-top navbar-collapse">
+		<div class="container">
+			<div id="menu" class="col-xs-12">
+				<ul class="nav navbar-nav"> 
+					<li class="nav-item"> 
+						<a data-smooth="smooth" class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a data-smooth="smooth" class="nav-link" href="#speakers">Speakers</a>
+					</li>
+					<li class="nav-item">
+						<a data-smooth="smooth" class="nav-link" href="#agenda">Agenda</a>
+					</li>
+					<li>
+						<a class="pull-xs-left pull-md-right m-l-0 m-r-0" href="#"><img id="fixedLogoNav" class="img-fluid" style="height: 37px; margin-left: 2px;" src="./img/founding-sponsors-transparent.png"/></a>
+						<button id="RegLinkNav" style="display: none;" type="button" class="btn register-now nav-register-now btn-md pull-xs-left pull-md-right" data-toggle="modal" data-target="#register">Free Registration</button>
+						<a class="navbar-brand pull-xs-left pull-md-right m-r-1" href="#"><img src="./img/iconic-logo.png"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav><!-- /.navbar -->
+	<div class="banner">
+		<div class="bg-info text-xs-center ">
+			<div class="container bg-padding">
+				<img class="header-img text-xs-center" src="img/cnbc-iconic.png"/>
+				<div class="row">
+					<div class="btn-group m-t-3" role="group" aria-label="Basic example">
+						<button id="RegLinkBanner" type="button" class="btn register-now btn-lg text-xs-center" data-toggle="modal" data-target="#register">Free Registration</button>
+					</div>	
+				</div>
+				<h3 class="m-t-2 m-b-0 innovate boston-virtual">innovate | inspire | ignite</h3>
+			</div>
+		</div>
+	</div>
+	<div class="fluid-container t-mobile-bar img-fluid"><img src="https://presentations.inxpo.com/FileLibrary/2535/14/t-mobile-narrow.jpg" class="t-mobile-img "></div>	
+	<section id="section">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1 class="boston-virtual text-xs-center">Boston Virtual Event</h1>
+				<p class="lead text-sm-center">Join us virtually for the last stop of the 2016 iCONIC Tour. iCONIC: Boston will be a hard-hitting one day event, presented by Inc. and CNBC, to <b>ignite new ideas</b> and be <b>inspired by todays biggest business icons</b>. Every session will challenge you to overturn conventional thinking and revolutionize the way you do business. You will discover what it takes to <b>build a lasting brand</b>, get tips on redefining your <b>relationship with your customers</b>, hear strategies on how to <b>compete with giants</b>, learn how to <b>ignite change in your company and community</b> and so much more!</p>
+				<h1 class="lead m-b-3 text-xs-center"><b>One day. Countless icons. An unforgettable experience.</b></h1> 
+			</div>
+		</div>
+		<div class="container no-padding-xs">
+		  <div class="row">	
+				<div class="text-xs-center t-mobile-area m-y-2">
+					<img class="t-mobile-logo img-fluid" src="./img/founding-sponsors.png"/>
+					<ul class="p-t-2" id="countdown">
+					<h1 class="m-b-1">September 22, 2016</h1>
+						<li><span class="days">00</span><p class="days_text">Days</p></li>
+						<li class="seperator">:</li>
+						<li><span class="hours">00</span><p class="hours_text">Hours</p></li>
+						<li class="seperator">:</li>
+					  <li><span class="minutes">00</span><p class="minutes_text">Minutes</p></li>
+						<li class="seperator">:</li>
+						<li><span class="seconds">00</span><p class="seconds_text">Seconds</p></li>
+					</ul><!-- /.end countdown -->
+				</div>
+			</div>	
+		</div> <!-- ./end row -->	
+		<div id="speakers" class="row">
+		<h1 class="display-4 text-xs-center text-muted m-b-1">Speakers</h1>
+		  <div class="card-deck-wrapper">
+			  <div class="card-deck">
+			  	<div class="col-md-6 col-md-offset-3 p-l-0 p-r-0 m-b-2 display-none">
+			    <div class="card">
+			      <img class="card-img-top img-fluid" src="./img/Reg_HoldingImage.jpg" alt="Card image cap">
+			      <div class="card-block display-none">
+			        <!-- <h4 class="card-title"><span class="italics">Stay Tuned</span></h4> -->
+			        <!-- <p class="card-text minimize more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+			        <!-- <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p> -->
+			      </div>
+			    </div>
+			  	</div>
+			  	<div class="col-md-6 p-l-0 p-r-0 m-b-1">
+			  		<div class="card">
+			      <img class="card-img-top img-fluid" src="./img/jim-koch.png" alt="Card image cap">
+			      <div class="card-block card-max">
+			        <h4 class="card-title">Jim Koch</h4>
+			        <p class="card-text minimize more">Jim Koch is the founder of The Boston Beer Company, brewer of Samuel Adams Boston Lager and author of <em>Quench Your Own Thirst</em>. Thirty-two years ago, Jim began brewing Sam Adams Boston Lager in his kitchen, and sparked the craft beer revolution. Today, Samuel Adams is the leading craft brewer in the country, and has won more awards for its innovative beers than any other brewery in the world.</p>
+			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+			      </div>
+			    </div>
+			  	</div>
+			    <div class="col-md-6 p-l-0 p-r-0 m-b-1">
+			    	<div class="card">
+			      <img class="card-img-top img-fluid" src="./img/curt-richardson.png" alt="Card image cap">
+			      <div class="card-block">
+			        <h4 class="card-title">Curt Richardson</h4>
+			        <p class="card-text minimize">Since the 1980's, Curt Richardson has owned several companies in the tooling and molding industry, where he developed an intimate knowledge of manufacturing and supply chain. In 1998, from that knowledge and expertise he created OtterBox&reg; - a line of waterproof, crushproof boxes popular among water sports enthusiasts. Leveraging a set of core values and the principles of E-Myth, Richardson cultivated OtterBox for growth by installing strong systems and processes and by putting the customer at the center of all decisions. At the same time, he instilled a culture of innovation, passion and integrity to create an award-winning company culture. Richardson served as CEO of OtterBox until September 2012, when he transitioned into the role of chairman.</p>
+			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+			      </div>
+			    </div>
+			    </div>
+			  </div>
+			</div>
+		</div><!-- /.end row -->
+		<div class="row">
+		  <div class="card-deck-wrapper m-b-0">
+			  <div class="card-deck">
+			  	<div class="col-md-6 p-l-0 p-r-0">
+			  		<div class="card">
+			      <img class="card-img-top img-fluid" src="./img/daniel-lubetzky.png" alt="Card image cap">
+			      <div class="card-block">
+			        <h4 class="card-title">Daniel Lubetzky</h4>
+			        <p class="card-text minimize">Daniel Lubetzky founded KIND Healthy Snacks in 2004. Today, KIND is available at more than 150,000 retailers and is the fastest growing snack company in the U.S. Through the KIND Movement, it has inspired nearly a million acts of kindness amongst its community. Lubetzky is also the founder of PeaceWorks Inc. and the PeaceWorks Foundation's OneVoice Movement. In 2013, he was named Ernst &amp; Young Entrepreneur of the Year and one of Advertising Age's "Creativity 50." In 2009, TIME named him among 25 "pioneers" of social innovation.</p>
+			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+			      </div>
+			    </div>
+			  	</div>
+			    <div class="col-md-6 p-l-0 p-r-0">
+			  		<div class="card m-b-0">
+			      <img class="card-img-top img-fluid" src="./img/greg-glassman.png" alt="Card image cap">
+			      <div class="card-block">
+			        <h4 class="card-title">Greg Glassman</h4>
+			        <p class="card-text minimize">Greg Glassman is the founder and CEO of CrossFit, a strength and conditioning program for many police academies and tactical operations teams, military special operations units, champion martial artists, moms, dads, grandmothers and hundreds of other elite and professional athletes worldwide. Glassman was an elite level gymnast and athlete all his life.  In 1995, he began training officers at the Santa Cruz Sheriff's Department.  In 2001 Glassman started crossfit.com and began affiliating gyms under the CrossFit name. Today there are over 13,000 independently-owned CrossFit affiliates in over 130 countries, and the annual CrossFit Games, which attracted 273,000 participants in 2015, are televised on ESPN. </p>
+			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+			      </div>
+			    </div>
+			  	</div>
+			  </div>
+			</div>
+		</div><!-- /.end row -->
+		</section>	
+		</div><!-- end container -->
+		
+	<div class="secondary-speakers">
+	<section class="secondary">
+	<div class="container">
+		<div class="row">
+		  <div class="card-deck-wrapper">
+			  <div class="card-deck m-b-1">
+			  <div class="col-md-4 p-l-0 p-r-0">
+			    <div class="card">
+			      <img class="card-img-top img-fluid" src="./img/julie-rice.png" alt="Card image cap">
+			      <div class="card-block">
+			        <h4 class="card-title">Julie Rice</h4>
+			        <p class="card-text minimize">Julie Rice and her partner Elizabeth Cutler founded SoulCycle on the belief that fitness should be inspiring. Their vision of a motivational 45-minute indoor-cycling workout combined with a chic branded environment, and "above and beyond" customer service came to life in 2006. Today, SoulCycle currently has 64 locations nationwide. Julie has been honored as one of Goldman Sachs' 100 Builders + Innovators in 2013 and 2014, and SoulCycle was voted one of the World's Top 10 Most Innovative Companies in Fitness of 2013 by Fast Company. In 2015, Julie was voted one of Fast Company's Most Creative People in Business.</p>
+			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+			      </div>
+			    </div>
+			    </div>
+			  <div class="col-md-4 p-l-0 p-r-0">
+			  	<div class="card">
+			      <img class="card-img-top img-fluid" src="./img/elizabeth-cutler.png" alt="Card image cap">
+			      <div class="card-block">
+			        <h4 class="card-title">Elizabeth Cutler</h4>
+			        <p class="card-text minimize">Elizabeth Cutler and her partner Julie Rice were determined to find an alternative to the fitness routines that felt like work. In 2006, they created SoulCycle, a workout that combines inspirational coaching with high-energy music and a full body workout on the bike. Today, riders of all ages have responded to the SoulCycle cardio party with over 60,000 people riding at SoulCycle every week. Elizabeth was honored as one of Goldman Sachs' 100 Builders + Innovators in 2013 and 2014, and SoulCycle was voted one of the World's Top 10 Most Innovative Companies in Fitness of 2013 by Fast Company. In 2015, Elizabeth was voted one of Fast Company's Most Creative People in Business.</p>
+			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+			      </div>
+			    </div>
+			  	</div>
+			    <div class="col-md-4 p-l-0 p-r-0">
+			    <div class="card">
+			      <img class="card-img-top img-fluid" src="./img/john-jacobs.png" alt="Card image cap">
+			      <div class="card-block">
+			        <h4 class="card-title">John Jacobs</h4>
+			        <p class="card-text minimize">John Jacobs is co-founder and Chief Creative Optimist of The Life is Good Company, which spreads the power of optimism through inspiring art, a passionate community, and groundbreaking nonprofit work. John and his brother Bert launched their business with $78 in their pockets, selling T-shirts in the streets of Boston. Today, Life is Good is a $100 million positive lifestyle brand sold by over 2,000 retailers across the US and Canada.</p>
+			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+			      </div>
+			    </div>
+			    </div>
+			  </div>
+			</div>
+		</div><!-- /.end row -->
+		<div class="row">
+		  <div class="card-deck-wrapper">
+			  <div class="card-deck m-b-1">
+			  <div class="col-md-4 p-l-0 p-r-0">
+			  		<div class="card">
+			      <img class="card-img-top img-fluid" src="./img/danae_Ringelmann.png" alt="Card image cap">
+			      <div class="card-block">
+			        <h4 class="card-title">Danae Ringelmann</h4>
+			        <p class="card-text minimize">As Indiegogo's Chief Development Officer, Danae is focused on driving total customer satisfaction and steering the company's employee culture and value initiatives. Prior to Indiegogo, Danae was a securities analyst at Cowen &amp; Co. where she covered publicly traded entertainment companies. Danae also focused on cable network, NFL, newspaper and hedge fund clientele while at JPMorgan's Investment Bank and Private Bank. In September 2013, Danae was named one of Fortune's "40 Under 40." She recently testified before the United States House Small Business Subcommittee on Investigations, Oversight and Regulations on "Financing America's Small Businesses: Innovative Ideas for Raising Capital."</p>
+			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+			      </div>
+			    </div>
+			  	</div>
+			  	<div class="col-md-4 p-l-0 p-r-0">
+			    	<div class="card">
+			      <img class="card-img-top img-fluid" src="./img/dan-price.png" alt="Card image cap">
+			      <div class="card-block">
+			        <h4 class="card-title">Dan Price</h4>
+			        <p class="card-text minimize">Dan Price captured headlines around the world after implementing a $70,000 minimum wage at his company, Gravity Payments. This move has sparked a national debate on the purpose of business and leadership responsibility. Price's 40-year goal is to be a small speck of sand in the revolution where business ceases to be about profit and greed to one that is about values and serving others. Today, more than 13,000 businesses across the country trust Gravity Payments to save them millions in fees and hours in frustration by making it easy to accept credit card payments.</p>
+			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+			      </div>
+			    </div>
+			    </div>
+			    <div class="col-md-4 p-l-0 p-r-0">
+			  		<div class="card">
+			      <img class="card-img-top img-fluid" src="./img/todd-wagner.png" alt="Card image cap">
+			      <div class="card-block">
+			        <h4 class="card-title">Todd Wagner</h4>
+			        <p class="card-text minimize">Entrepreneur and philanthropist Todd Wagner has made a significant impact across a range of industries including technology, entertainment, and the charitable world. Wagner revolutionized streaming media when he launched Broadcast.com with business partner Mark Cuban in 1995, serving as CEO and later selling the company to Yahoo! for $5.7 billion. He then built a portfolio of entertainment companies spanning content creation, distribution and 
+							exhibition with Landmark Theaters, 2929 Productions, Magnolia Pictures and AXS-TV. In 2001 he established the Todd Wagner Foundation focusing on at-risk youth. In his current entrepreneurial pursuit as founder and chairman of the Charity Network, Wagner assists charities with the transition from analog to digital, a long time theme of his career. The Charity Network harnesses the power of celebrity, technology and media to raise awareness and funds for some of the world's toughest challenges through three leading digital fundraising platforms - Charitybuzz, Prizeo and Chideo - raising more than $200 million for charities to date.</p>
+							<p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+			      </div>
+			    </div>
+			  	</div>
+			  </div>
+			</div>
+		</div><!-- /.end row -->
+		<div class="row">
+		  <div class="card-deck-wrapper">
+			  <div class="card-deck m-b-1">
+			  <div class="col-md-4 p-l-0 p-r-0">
+			    	<div class="card">
+			      <img class="card-img-top img-fluid" src="./img/bryn-mooser.png" alt="Card image cap">
+			      <div class="card-block">
+			        <h4 class="card-title">Bryn Mooser</h4>
+			        <p class="card-text minimize">Bryn Mooser is the CEO and co-founder of RYOT, the first immersive media company linking content to action. Recently acquired by AOL for the Huffington Post, RYOT has grown to become one of the most prolific virtual reality and 360&deg; content studios over the past year. Bryn has overseen the production of more than 60 virtual reality films created by RYOT in collaboration with some of the most well-known brand partners in the world.</p>
+			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+			      </div>
+			    </div>
+			    </div>
+			    <div class="col-md-4 p-l-0 p-r-0">
+			    	<div class="card">
+			      <img class="card-img-top img-fluid" src="./img/eric-schurenberg.png" alt="Card image cap">
+			      <div class="card-block">
+			        <h4 class="card-title">Eric Schurenberg</h4>
+			        <p class="card-text minimize">During the four years Eric Schurenberg has presided over <em>Inc.</em>, the magazine has seen a 24 percent increase in ad pages and received numerous journalism awards and a National Magazine Nomination for general excellence. Prior to his tenure at <em>Inc.</em>, he had leadership roles at <em>Money</em>, <em>Fortune</em>, <em>Business 2.0</em>, the CBS Interactive websites Bnet.com and MoneyWatch.com, and the Goldman Sachs Group's personal wealth management website, Goldman.com. In addition to hosting Inc. live events, Schurenberg is an occasional contributor to CNBC, MSNBC, and the Today show.</p>
+			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+			      </div>
+			    </div>
+			    </div>
+			    <div class="col-md-4 p-l-0 p-r-0">
+			  		<div class="card">
+			      <img class="card-img-top img-fluid" src="./img/tyler-mathisen.png" alt="Card image cap">
+			      <div class="card-block">
+			        <h4 class="card-title">Tyler Mathisen</h4>
+			        <p class="card-text minimize">Tyler Mathisen co-anchors CNBC's <em>"Power Lunch,"</em> one of the network's longest-running program franchises, as well as <em>"Nightly Business Report,"</em> an award-winning evening business news program. <em>NBR</em> was named Best Radio/TV Show in 2014 by the Society of American Business Editors and Writers.</p>
+			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+			      </div>
+			    </div>
+			  	</div>
+			  </div>
+			</div>
+		</div><!-- /.end row -->
+		<div class="row">
+		  <div class="card-deck-wrapper m-b-0">
+			  <div class="card-deck ">
+			  	<div class="col-md-4 p-l-0 p-r-0">
+			    	<div class="card">
+			      <img class="card-img-top img-fluid" src="./img/adam-miller.png" alt="Card image cap">
+			      <div class="card-block">
+			        <h4 class="card-title">Adam Miller</h4>
+			        <p class="card-text minimize">Adam Miller is the founder and CEO of Cornerstone OnDemand. Since starting the company in 1999, Miller has led Cornerstone through nearly 14 years of consecutive growth, transforming it into one of the world's leading Software-as-a-Service companies. Cornerstone has been recognized as one of the nation's fastest growing companies by Deloitte, Inc. magazine and the Los Angeles Business Journal. Miller recently was honored as an Ernst &amp; Young Entrepreneur of the Year 2011 award winner. He also was named the Southern California Technology Association's CEO of the Year in 2009.</p>
+			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+			      </div>
+			    </div>
+			    </div>
+			    <div class="col-md-4 p-l-0 p-r-0">
+			  		<div class="card">
+			      <img class="card-img-top img-fluid" src="./img/jim-ledbetter.png" alt="Card image cap">
+			      <div class="card-block">
+			        <h4 class="card-title">James Ledbetter</h4>
+			        <p class="card-text minimize">Before joining Inc., James Ledbetter was the opinion editor of Reuters. He was the founding editor of Slate's financial site The Big Money and deputy managing editor of CNN Money. Ledbetter has published five books, including Unwarranted Influence: Dwight D. Eisenhower and the Military-Industrial Complex.</p>
+			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+			      </div>
+			    </div>
+			  	</div>
+			  	<div class="col-md-4 p-l-0 p-r-0">
+			  		<div class="card m-b-0">
+			      <img class="card-img-top img-fluid" src="./img/kate-rogers.png" alt="Card image cap">
+			      <div class="card-block">
+			        <h4 class="card-title">Kate Rogers</h4>
+			        <p class="card-text minimize">Kate Rogers joined CNBC in September 2014 as a reporter based at the network's global headquarters in Englewood Cliffs, New Jersey. Rogers covers small business and entrepreneurship for the network, appearing on its Business Day programming and providing daily stories and videos to CNBC.com.</p>
+			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+			      </div>
+			    </div>
+			  	</div>
+			  	
+			  </div>
+			</div>
+		</div><!-- /.end row -->
+	</div>
+	</section>
+	</div><!-- /.end secondary -->	
+	</div><!-- /.end row -->
+	<section>
+	<div class="container">
+		<div class="row col-xs-12 no-padding-xs m-b-2">
+			<!-- schedule -->
+			<h1 id="agenda" class=" display-4 text-xs-center text-muted">Agenda</h1>
+			<p class="text-xs-center lead">Mark your calendar for the speakers that you would like to hear from</p>
+			<ul class="list-group">
+				<li class="list-group-item list-group-item-info">
+					<h5 class="list-group-item-heading">Welcome to Iconic 2016: Innovate, Inspire, Ignite<span class="label presentation-time pull-xs-left pull-md-right display-2">9:00 am</span></h5>
+					<h6>Remarks: Tyler Mathisen And Eric Schurenberg</h6>
+				</li>
+				<li class="list-group-item">
+					<h5 class="list-group-item-heading">IGNITE<br/>Do What You Love, Love What You Do <span class="label presentation-time pull-xs-left pull-md-right">9:10 am</span></h5>
+					<h6>Speaker: John Jacobs</h6>
+					<p class="minimize">Brothers Bert and John Jacobs took $78, their stick-figure mascot, Jake, and a simple yet powerful slogan and built The Life Is Good Company-a $100 million lifestyle brand committed to spreading the power of optimism. Today, Life Is Good combines its for-profit and nonprofit businesses into a forward-thinking model for success. By sharing his inspiring entrepreneurial story, John Jacobs will help you shape your own journey. Discover how to reinvent a brand without losing what makes it special. Also, learn how to effectively manage multiple bottom lines (i.e., business, brand, people, and community) and what it takes to set a course that will far exceed expectations.</p>
+				</li>
+				<li class="list-group-item">
+					<h5 class="list-group-item-heading">INSPIRE<br/>How to Brew Passion and Craft a Satisfying Vision<span class="label presentation-time pull-xs-left pull-md-right">10:00 am</span></h5>
+					<h6>Speaker: Jim Koch; Interviewer: Kate Rogers</h6>
+					<p class="minimize">You could say of Jim Koch that suds were in his stars. A fifth-generation brewer, he started Boston Beer in 1984 with a family recipe for an "all-malt" brew from the 1860s. Today, revenue at The Boston Beer Company (maker of Samuel Adams) is just shy of $1 billion. Learn how Koch built a billion-dollar business he loves, why he's old-school on the importance of selling, and the one thing he believes every startup must do to be brilliant. From creating value to embracing failure to managing growth, this session is a full-bodied brew of Koch's triumphs, misfires, and advice.</p>
+				</li>
+				<li class="list-group-item">
+					<h5 class="list-group-item-heading">INNOVATE<br/>No Pain, No Gain: How CrossFit Grew a Fanatical Following<span class="label presentation-time pull-xs-left pull-md-right">10:35 am</span></h5>
+					<h6>Speaker: Greg Glassman; Interviewer: Tyler Mathisen</h6>
+					<p class="minimize">A lifelong athlete and elite-level gymnast, the outspoken Greg Glassman revolutionized the fitness industry in 2000 by inventing a whole new way to work out. He has inspired extraordinary brand loyalty among hundreds of thousands of CrossFitters, including professional athletes, elite soldiers, moms, dads, and even grandparents. Glassman will describe his entrepreneurial journey and essential business outlook, which is this: He can do whatever the hell he wants to. Find out how Glassman is building business through community and how CrossFit became a global phenomenon and the fastest-growing sport in America. And learn what it takes to keep any company in the best shape of its business life.</p>
+				</li>
+				<li class="list-group-item list-group-item-info">
+					<h5 class="list-group-item-heading">Networking Break<span class="label presentation-time  pull-xs-left pull-md-right">11:10 am</span></h5>
+					<h6>Join us in the chat lounge</h6>
+				</li>
+			  <li class="list-group-item">
+					<h5 class="list-group-item-heading">IGNITE<br/>Selling Your Story: Weaving a Narrative into the Fabric of Your Business<span class="label presentation-time pull-xs-left pull-md-right">11:45 am</span></h5>
+			  		<h6>Speaker: Todd Wagner And Bryn Mooser; Interviewer: Tyler Mathisen</h6>
+			  		<p class="minimize">Experts say a strong narrative can help your company stand out in a sea of choices. But what makes a great story?  Alongside long-time business partner Mark Cuban, Todd Wagner created a portfolio of entertainment companies focused on content creation, distribution and exhibition. Oscar-nominee Bryn Mooser launched RYOT with the goal of creating "immersive media," and made headlines with the company's recent acquisition by AOL for the Huffington Post. Learn from these media masters how to get people to join you - and stay with you - on your journey.  Every business has a story...how will you tell yours?</p>
+			  </li>
+			  <li class="list-group-item">
+					<h5 class="list-group-item-heading">INNOVATE<br/>The Culture of Innovation: Go From Founding to Future<span class="label presentation-time pull-xs-left pull-md-right">12:20 pm</span></h5>
+			  		<h6>Speaker: Danae Ringelmann</h6>
+			  		<p class="minimize">So you got funded, you launched, now the hard part -- it's time to grow the business and scale your skills in order to build a thriving organization. Diversity and values are secret ingredients for handling these transformative efforts and driving innovation. Indiegogo's Danae Ringelmann explains how authenticity and collaboration are a must to invent any industry. Find out the pivotal moments within a business' lifecycle where fearlessness is the only way to survive and why empowerment (not just funding) is necessary to go from idea to reality.</p>
+			  </li>
+			  <li class="list-group-item list-group-item-info">
+					<h5 class="list-group-item-heading">Lunch<span class="label presentation-time pull-xs-left pull-md-right">12:55 pm</span></h5>
+					<h6>Grab some lunch and join us in the chat lounge</h6>
+			  </li>
+			  <li class="list-group-item">
+					<h5 class="list-group-item-heading">IGNITE<br/>An Iconic Debate: Should Business Strive to Have a Social Mission?<span class="label presentation-time pull-xs-left pull-md-right">2:05 pm</span></h5>
+			  		<h6>Pro: Daniel Lubetzky;  Con: Curt Richardson; Moderator: James Ledbetter</h6>
+			  		<p class="minimize">Increasingly, companies - and the entrepreneurs that create them - tout more than what they make or the services they offer; they craft mission statements and place a keen eye on social responsibility.  But are these conscious capitalists missing the bottom line? During this debate, you'll have an opportunity to vote Yes or No on the proposition: Businesses should strive to be a force for social good, not merely profits. What side are you on?</p>
+			  </li>
+			  <li class="list-group-item">
+					<h5 class="list-group-item-heading">INSPIRE<br/>Bikes, Branding, and Business: A Conversation with the Founders of SoulCycle&reg;<span class="label presentation-time pull-xs-left pull-md-right">2:50 pm</span></h5>
+			  		<h6>Speaker: Elizabeth Cutler And Julie Rice; Interviewer: David Whitford</h6>
+			  		<p class="minimize">It's been a wild ride ever since Elizabeth Cutler and Julie Rice steered their vision into the powerhouse venture known as SoulCycle&reg;. Cutler and Rice will describe their entrepreneurial journey and essential business outlook. Find out how this dynamic duo reimagined the fitness business, spun up locations nationwide, and built a personalized experience that stays with you long after you walk out of a SoulCycle&reg; studio. Cutler and Rice took their business to a stage other companies only dream of. Learn when to scale and why, what goes into building a brand people freaking love and, how a quality customer experience can elevate any company...including yours.</p>
+			  </li>
+			  <li class="list-group-item list-group-item-info">
+					<h5 class="list-group-item-heading ">Break<span class="label presentation-time pull-xs-left pull-md-right">3:25 pm</span></h5>
+					<h6>Be sure not to miss "What I Learned From My Million-Dollar Pay Cut"</h6>
+			  </li>
+			  <li class="list-group-item">
+					<h5 class="list-group-item-heading">IGNITE<br/>What I Learned From My Million-Dollar Pay Cut<span class="label presentation-time pull-xs-left pull-md-right">4:00 pm</span></h5>
+			  		<h6>Speaker: Dan Price; Interviewer: Eric Schurenberg</h6>
+			  		<p class="minimize">Dan Price sparked a worldwide frenzy for his novel-some might say crazy-idea: slashing his own salary to pay everyone at his company a fair wage. Using personal anecdotes peppered with practical advice and strategy, Price shares how he launched (and almost lost!) Gravity Payments and opens up about the professional and personal ramifications of his decision, which sparked a national debate. Learn why he believes business is about purpose, not profit. And find out what you can do within your organization to shift the paradigm.</p>
+			  </li>
+			  <li class="list-group-item list-group-item-info">
+					<h5 class="list-group-item-heading">Major Keynote Address To Be Announced!<span class="label presentation-time pull-xs-left pull-md-right">4:40 pm</span></h5>
+					<h6>Coming Soon</h6>
+			  </li>
+			</ul><!-- /schedule -->
+		</div>
+		
+	</div>
+	</section>
+	
+	<footer>
+		<div class="container">
+			<div class="row text-xs-center">
+				<div class="footer-desc">
+  				iCONIC is a three part dynamic event series brought to you by CNBC and Inc., that brings together succeeding business owners for a rare chance to network, think differently and leave you feeling inspired.
+				</div>
+				  <ul class="privacy">
+				    <li class="privacy-statement">Privacy Statements</li>
+				    <li><a href="http://www.inc.com/about/privacy.html" target="_blank"> Inc.</a></li>
+				    <li><a href="http://www.nbcuniversal.com/privacy/" target="_blank"> NBC Universal</a></li>
+				    <li><a href="http://www.t-mobile.com/company/website/privacypolicy.aspx" target="_blank"> T-Mobile</a></li>
+				    <li>Platform &reg;2016</li>
+				    <li><a href="http://www.inxpo.com" target="_blank"> INXPO, Inc. All rights reserved.</a></li>
+				    <li><a href="https://presentations.inxpo.com/SharedContent/HTML/VX/TechnicalRequirements.html" target="_blank"> INXPO Terms of Service</a></li>
+				    <li><a href="https://vts.inxpo.com/scripts/Server.nxp?LASCmd=AI:4;F:APIUTILS!10" target="_blank"> INXPO Privacy Policy</a></li>
+				  </ul>
+			</div>
+		</div>
+	</footer>
+	<!-- <img id="fixedLogo" class="img-fluid fixed-logo" style="display: none;" src="./img/founding-sponsors-transparent.png"/> -->
+	
+	</div><!-- /.end main container -->
+	<!--===================================
+      FORM MODAL
+    ====================================-->
+		
+		<div id="register" class="modal fade">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header modal-register">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title text-xs-center">Register today for FREE and up your small business game by hearing insights LIVE from influential business leaders.</h4>
+					</div>
+					<iframe id="QRegFrame"frameborder="0" src="https://vts.inxpo.com/scripts/Server.nxp?LASCmd=AI:4;F:QS!10100&ShowKey=33176&GroupID=iCONIC" height="890" scrolling="no"></iframe>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->		
+
+<script type="text/javascript" src="scripts/jquery-2.2.3.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
