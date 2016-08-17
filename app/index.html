@@ -2,41 +2,23 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>CNBC Boston</title>
+	<title>Online Virtual Event</title>
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400i,500i,700i" rel="stylesheet"> -->
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	<!-- AFFILIATE SCRIPT -->
 	<script type="text/javascript" src="https://vts.inxpo.com/cfr/scripts/XBrowser.js"></script>
 	<script type="text/javascript">
-
 	  var g_AffiliateData = GetURLParamValue("AffiliateData");
-	  
 	  /********UPDATE QUICK REGISTRATION LINK BETWEEN SINGLE QUOTES********/
 	  var g_iFrameRegUrlSrc = 'https://vts.inxpo.com/scripts/Server.nxp?LASCmd=AI:4;F:QS!10100&ShowKey=XXXXX';
 	  var g_iFrameRegFinalUrlSrc = g_iFrameRegUrlSrc + '&AffiliateData=' + g_AffiliateData;
-	  
-	  var g_HomeUrlSrc = 'home.html';
+	  var g_HomeUrlSrc = 'index.html';
 	  var g_HomeFinalUrlSrc = g_HomeUrlSrc + '?AffiliateData=' + g_AffiliateData;
-
-
-	  // var g_SpeakersUrlSrc = 'OnDemand.html';
-	  // var g_SpeakersFinalUrlSrc = g_SpeakersUrlSrc + '?AffiliateData=' + g_AffiliateData;
-
-	  // // var g_SponsorsUrlSrc = 'LoginPage.html';
-	  // // var g_SponsorsFinalUrlSrc = g_SponsorsUrlSrc + '?AffiliateData=' + g_AffiliateData;
-	  
-	  // var g_LegalUrlSrc = 'LegalNotice.html';
-	  // var g_LegalFinalUrlSrc = g_LegalUrlSrc + '?AffiliateData=' + g_AffiliateData;
-
-	  var g_RegistrationUrlSrc = 'https://vts.inxpo.com/scripts/Server.nxp?LASCmd=AI:4;F:QS!10100&ShowKey=33176&GroupID=iCONIC';
+	  var g_RegistrationUrlSrc = 'https://vts.inxpo.com/scripts/Server.nxp?LASCmd=AI:4;F:QS!10100&ShowKey=XXXXX';
 	  var g_RegistrationFinalUrlSrc = g_RegistrationUrlSrc + '?AffiliateData=' + g_AffiliateData;
-
-	  
-	  function window_onload()
-	  {
+	  function window_onload(){
 	    if (g_AffiliateData == ""){  
 		    document.getElementById("QRegFrame").src = g_iFrameRegUrlSrc;
 		    document.getElementById("RegLinkNav").href = g_RegistrationUrlSrc;
@@ -50,6 +32,13 @@
 	  }
 	</script>
 	<!-- END AFFILIATE SCRIPT -->
+	<!-- SET COUNTDOWN DATE -->
+	<script type="text/javascript">
+		$('#countdown').countdown({
+  		date: '09/22/2016 09:00:00'
+  	});
+	</script>
+	<!-- END COUNTDOWN DATE -->
 </head>
 <body onload="window_onload()" data-spy="scroll" data-target=".navbar" id="home" data-offset="115">
 	<nav class="navbar navbar-dark nav-color navbar-fixed-top navbar-collapse">
@@ -82,12 +71,12 @@
 						<button id="RegLinkBanner" type="button" class="btn register-now btn-lg text-xs-center" data-toggle="modal" data-target="#register">Free Registration</button>
 					</div>	
 				</div>
-				<h3 class="m-t-2 m-b-0 innovate boston-virtual">innovate | inspire | ignite</h3>
+				<h3 class="m-t-2 m-b-0 innovate boston-virtual">strategies | streamlined  | offshoring</h3>
 			</div>
 		</div>
 	</div>
 	<div class="fluid-container t-mobile-bar img-fluid"><img src="https://presentations.inxpo.com/FileLibrary/2535/14/t-mobile-narrow.jpg" class="t-mobile-img "></div>	
-	<section id="section">
+	<section>
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
@@ -116,24 +105,24 @@
 		  <div class="card-deck-wrapper">
 			  <div class="card-deck">
 			  	<div class="col-md-6 p-l-0 p-r-0 m-b-1">
-			  		<div class="card">
-			      <img class="card-img-top img-fluid" src="http://placehold.it/513x270/222" alt="Card image cap">
-			      <div class="card-block card-max">
-			        <h4 class="card-title">Jim Koch</h4>
-			        <p class="card-text minimize more">Credibly innovate granular internal or "organic" sources whereas high standards in web-readiness. Energistically scale future-proof core competencies vis-a-vis impactful experiences. Dramatically synthesize integrated schemas with optimal networks.</p>
-			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
-			      </div>
-			    </div>
+				  	<div class="card">
+				      <img class="card-img-top img-fluid" src="http://placehold.it/513x270/222" alt="Card image cap">
+				      <div class="card-block">
+				        <h4 class="card-title">Jim Koch</h4>
+				        <p class="card-text minimize">Credibly innovate granular internal or "organic" sources whereas high standards in web-readiness. Energistically scale future-proof core competencies vis-a-vis impactful experiences. Dramatically synthesize integrated schemas with optimal networks.</p>
+				        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+				      </div>
+				    </div>
 			  	</div>
 			    <div class="col-md-6 p-l-0 p-r-0 m-b-1">
 			    	<div class="card">
-			      <img class="card-img-top img-fluid" src="http://placehold.it/513x270/222" alt="Card image cap">
-			      <div class="card-block">
-			        <h4 class="card-title">Curt Richardson</h4>
-			        <p class="card-text minimize">Interactively procrastinate high-payoff content without backward-compatible data. Quickly cultivate optimal processes and tactical architectures. Completely iterate covalent strategic theme areas via accurate e-markets.</p>
-			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
-			      </div>
-			    </div>
+				      <img class="card-img-top img-fluid" src="http://placehold.it/513x270/222" alt="Card image cap">
+				      <div class="card-block">
+				        <h4 class="card-title">Curt Richardson</h4>
+				        <p class="card-text minimize">Interactively procrastinate high-payoff content without backward-compatible data. Quickly cultivate optimal processes and tactical architectures. Completely iterate covalent strategic theme areas via accurate e-markets.</p>
+				        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+				      </div>
+			    	</div>
 			    </div>
 			  </div>
 			</div>
@@ -143,65 +132,63 @@
 			  <div class="card-deck">
 			  	<div class="col-md-6 p-l-0 p-r-0">
 			  		<div class="card">
-			      <img class="card-img-top img-fluid" src="http://placehold.it/513x270/222" alt="Card image cap">
-			      <div class="card-block">
-			        <h4 class="card-title">Daniel Lubetzky</h4>
-			        <p class="card-text minimize">Globally incubate standards compliant channels before scalable benefits. Quickly disseminate superior deliverables whereas web-enabled applications. Quickly drive clicks-and-mortar catalysts for change before vertical architectures.</p>
-			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
-			      </div>
-			    </div>
+				      <img class="card-img-top img-fluid" src="http://placehold.it/513x270/222" alt="Card image cap">
+				      <div class="card-block">
+				        <h4 class="card-title">Daniel Lubetzky</h4>
+				        <p class="card-text minimize">Globally incubate standards compliant channels before scalable benefits. Quickly disseminate superior deliverables whereas web-enabled applications. Quickly drive clicks-and-mortar catalysts for change before vertical architectures.</p>
+				        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+				      </div>
+			    	</div>
 			  	</div>
 			    <div class="col-md-6 p-l-0 p-r-0">
 			  		<div class="card m-b-0">
-			      <img class="card-img-top img-fluid" src="http://placehold.it/513x270/222" alt="Card image cap">
-			      <div class="card-block">
-			        <h4 class="card-title">Greg Glassman</h4>
-			        <p class="card-text minimize">Credibly reintermediate backend ideas for cross-platform models. Continually reintermediate integrated processes through technically sound intellectual capital. Holistically foster superior methodologies without market-driven best practices.</p>
-			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
-			      </div>
-			    </div>
+				      <img class="card-img-top img-fluid" src="http://placehold.it/513x270/222" alt="Card image cap">
+				      <div class="card-block">
+				        <h4 class="card-title">Greg Glassman</h4>
+				        <p class="card-text minimize">Credibly reintermediate backend ideas for cross-platform models. Continually reintermediate integrated processes through technically sound intellectual capital. Holistically foster superior methodologies without market-driven best practices.</p>
+				        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+				      </div>
+			    	</div>
 			  	</div>
 			  </div>
 			</div>
 		</div><!-- /.end row -->
-		</section>	
-		</div><!-- end container -->
-		
+	</section>	
 	<div class="secondary-speakers">
 	<section class="secondary">
 	<div class="container">
 		<div class="row">
 		  <div class="card-deck-wrapper">
 			  <div class="card-deck m-b-1">
-			  <div class="col-md-4 p-l-0 p-r-0">
-			    <div class="card">
-			      <img class="card-img-top img-fluid" src="http://placehold.it/336x177/222" alt="Card image cap">
-			      <div class="card-block">
-			        <h4 class="card-title">Julie Rice</h4>
-			        <p class="card-text minimize">Distinctively exploit optimal alignments for intuitive bandwidth. Quickly coordinate e-business applications through revolutionary catalysts for change. Seamlessly underwhelm optimal testing procedures whereas bricks-and-clicks processes.</p>
-			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
-			      </div>
+			  	<div class="col-md-4 p-l-0 p-r-0">
+				    <div class="card">
+				      <img class="card-img-top img-fluid" src="http://placehold.it/336x177/222" alt="Card image cap">
+				      <div class="card-block">
+				        <h4 class="card-title">Julie Rice</h4>
+				        <p class="card-text minimize">Distinctively exploit optimal alignments for intuitive bandwidth. Quickly coordinate e-business applications through revolutionary catalysts for change. Seamlessly underwhelm optimal testing procedures whereas bricks-and-clicks processes.</p>
+				        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+				      </div>
+				    </div>
 			    </div>
-			    </div>
-			  <div class="col-md-4 p-l-0 p-r-0">
-			  	<div class="card">
-			      <img class="card-img-top img-fluid" src="http://placehold.it/336x177/222" alt="Card image cap">
-			      <div class="card-block">
-			        <h4 class="card-title">Elizabeth Cutler</h4>
-			        <p class="card-text minimize">Synergistically evolve 2.0 technologies rather than just in time initiatives. Quickly deploy strategic networks with compelling e-business. Credibly pontificate highly efficient manufactured products and enabled data..</p>
-			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
-			      </div>
-			    </div>
+			  	<div class="col-md-4 p-l-0 p-r-0">
+				  	<div class="card">
+				      <img class="card-img-top img-fluid" src="http://placehold.it/336x177/222" alt="Card image cap">
+				      <div class="card-block">
+				        <h4 class="card-title">Elizabeth Cutler</h4>
+				        <p class="card-text minimize">Synergistically evolve 2.0 technologies rather than just in time initiatives. Quickly deploy strategic networks with compelling e-business. Credibly pontificate highly efficient manufactured products and enabled data..</p>
+				        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+				      </div>
+				    </div>
 			  	</div>
 			    <div class="col-md-4 p-l-0 p-r-0">
-			    <div class="card">
-			      <img class="card-img-top img-fluid" src="http://placehold.it/336x177/222" alt="Card image cap">
-			      <div class="card-block">
-			        <h4 class="card-title">John Jacobs</h4>
-			        <p class="card-text minimize">Dynamically target high-payoff intellectual capital for customized technologies. Objectively integrate emerging core competencies before process-centric communities. Dramatically evisculate holistic innovation rather than client-centric data.</p>
-			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
-			      </div>
-			    </div>
+				    <div class="card">
+				      <img class="card-img-top img-fluid" src="http://placehold.it/336x177/222" alt="Card image cap">
+				      <div class="card-block">
+				        <h4 class="card-title">John Jacobs</h4>
+				        <p class="card-text minimize">Dynamically target high-payoff intellectual capital for customized technologies. Objectively integrate emerging core competencies before process-centric communities. Dramatically evisculate holistic innovation rather than client-centric data.</p>
+				        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+				      </div>
+				    </div>
 			    </div>
 			  </div>
 			</div>
@@ -211,33 +198,33 @@
 			  <div class="card-deck m-b-1">
 			  <div class="col-md-4 p-l-0 p-r-0">
 			  		<div class="card">
-			      <img class="card-img-top img-fluid" src="http://placehold.it/336x177/222" alt="Card image cap">
-			      <div class="card-block">
-			        <h4 class="card-title">Danae Ringelmann</h4>
-			        <p class="card-text minimize">Progressively maintain extensive infomediaries via extensible niches. Dramatically disseminate standardized metrics after resource-leveling processes. Objectively pursue diverse catalysts for change for interoperable meta-services.</p>
-			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
-			      </div>
-			    </div>
+				      <img class="card-img-top img-fluid" src="http://placehold.it/336x177/222" alt="Card image cap">
+				      <div class="card-block">
+				        <h4 class="card-title">Danae Ringelmann</h4>
+				        <p class="card-text minimize">Progressively maintain extensive infomediaries via extensible niches. Dramatically disseminate standardized metrics after resource-leveling processes. Objectively pursue diverse catalysts for change for interoperable meta-services.</p>
+				        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+				      </div>
+			    	</div>
 			  	</div>
 			  	<div class="col-md-4 p-l-0 p-r-0">
 			    	<div class="card">
-			      <img class="card-img-top img-fluid" src="http://placehold.it/336x177/222" alt="Card image cap">
-			      <div class="card-block">
-			        <h4 class="card-title">Dan Price</h4>
-			        <p class="card-text minimize">Proactively fabricate one-to-one materials via effective e-business. Completely synergize scalable e-commerce rather than high standards in e-services. Assertively iterate resource maximizing products after leading-edge intellectual capital.</p>
-			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
-			      </div>
-			    </div>
+				      <img class="card-img-top img-fluid" src="http://placehold.it/336x177/222" alt="Card image cap">
+				      <div class="card-block">
+				        <h4 class="card-title">Dan Price</h4>
+				        <p class="card-text minimize">Proactively fabricate one-to-one materials via effective e-business. Completely synergize scalable e-commerce rather than high standards in e-services. Assertively iterate resource maximizing products after leading-edge intellectual capital.</p>
+				        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+				      </div>
+			    	</div>
 			    </div>
 			    <div class="col-md-4 p-l-0 p-r-0">
 			  		<div class="card">
-			      <img class="card-img-top img-fluid" src="http://placehold.it/336x177/222" alt="Card image cap">
-			      <div class="card-block">
-			        <h4 class="card-title">Todd Wagner</h4>
-			        <p class="card-text minimize">Quickly aggregate B2B users and worldwide potentialities. Progressively plagiarize resource-leveling e-commerce through resource-leveling core competencies. Dramatically mesh low-risk high-yield alignments before transparent e-tailers.</p>
-							<p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
-			      </div>
-			    </div>
+				      <img class="card-img-top img-fluid" src="http://placehold.it/336x177/222" alt="Card image cap">
+				      <div class="card-block">
+				        <h4 class="card-title">Todd Wagner</h4>
+				        <p class="card-text minimize">Quickly aggregate B2B users and worldwide potentialities. Progressively plagiarize resource-leveling e-commerce through resource-leveling core competencies. Dramatically mesh low-risk high-yield alignments before transparent e-tailers.</p>
+								<p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+				      </div>
+			    	</div>
 			  	</div>
 			  </div>
 			</div>
@@ -245,35 +232,35 @@
 		<div class="row">
 		  <div class="card-deck-wrapper">
 			  <div class="card-deck m-b-1">
-			  <div class="col-md-4 p-l-0 p-r-0">
+			  	<div class="col-md-4 p-l-0 p-r-0">
 			    	<div class="card">
-			      <img class="card-img-top img-fluid" src="http://placehold.it/336x177/222" alt="Card image cap">
-			      <div class="card-block">
-			        <h4 class="card-title">Bryn Mooser</h4>
-			        <p class="card-text minimize">Appropriately empower dynamic leadership skills after business portals. Globally myocardinate interactive supply chains with distinctive quality vectors. Globally revolutionize global sources through interoperable services.</p>
-			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
-			      </div>
-			    </div>
+				      <img class="card-img-top img-fluid" src="http://placehold.it/336x177/222" alt="Card image cap">
+				      <div class="card-block">
+				        <h4 class="card-title">Bryn Mooser</h4>
+				        <p class="card-text minimize">Appropriately empower dynamic leadership skills after business portals. Globally myocardinate interactive supply chains with distinctive quality vectors. Globally revolutionize global sources through interoperable services.</p>
+				        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+				      </div>
+			    	</div>
 			    </div>
 			    <div class="col-md-4 p-l-0 p-r-0">
 			    	<div class="card">
-			      <img class="card-img-top img-fluid" src="http://placehold.it/336x177/222" alt="Card image cap">
-			      <div class="card-block">
-			        <h4 class="card-title">Eric Schurenberg</h4>
-			        <p class="card-text minimize">Enthusiastically mesh long-term high-impact infrastructures vis-a-vis efficient customer service. Professionally fashion wireless leadership rather than prospective experiences. Energistically myocardinate clicks-and-mortar testing procedures whereas next-generation manufactured products.</p>
-			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
-			      </div>
-			    </div>
+				      <img class="card-img-top img-fluid" src="http://placehold.it/336x177/222" alt="Card image cap">
+				      <div class="card-block">
+				        <h4 class="card-title">Eric Schurenberg</h4>
+				        <p class="card-text minimize">Enthusiastically mesh long-term high-impact infrastructures vis-a-vis efficient customer service. Professionally fashion wireless leadership rather than prospective experiences. Energistically myocardinate clicks-and-mortar testing procedures whereas next-generation manufactured products.</p>
+				        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+				      </div>
+			    	</div>
 			    </div>
 			    <div class="col-md-4 p-l-0 p-r-0">
 			  		<div class="card">
-			      <img class="card-img-top img-fluid" src="http://placehold.it/336x177/222" alt="Card image cap">
-			      <div class="card-block">
-			        <h4 class="card-title">Tyler Mathisen</h4>
-			        <p class="card-text minimize">Dynamically reinvent market-driven opportunities and ubiquitous interfaces. Energistically fabricate an expanded array of niche markets through robust products. Appropriately implement visionary e-services vis-a-vis strategic web-readiness.</p>
-			        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
-			      </div>
-			    </div>
+				      <img class="card-img-top img-fluid" src="http://placehold.it/336x177/222" alt="Card image cap">
+				      <div class="card-block">
+				        <h4 class="card-title">Tyler Mathisen</h4>
+				        <p class="card-text minimize">Dynamically reinvent market-driven opportunities and ubiquitous interfaces. Energistically fabricate an expanded array of niche markets through robust products. Appropriately implement visionary e-services vis-a-vis strategic web-readiness.</p>
+				        <p class="read-more"><a href="#" class="read-button"><i class="fa fa-plus-square-o" aria-hidden="true"></i></a></p>
+				      </div>
+			    	</div>
 			  	</div>
 			  </div>
 			</div>
@@ -314,7 +301,7 @@
 			  </div>
 			</div>
 		</div><!-- /.end row -->
-	</div>
+	</div><!-- /.end container -->
 	</section>
 	</div><!-- /.end secondary -->	
 	</div><!-- /.end row -->
@@ -387,10 +374,8 @@
 			  </li>
 			</ul><!-- /schedule -->
 		</div>
-		
-	</div>
+	</div><!-- /.end main container -->
 	</section>
-	
 	<footer>
 		<div class="container">
 			<div class="row text-xs-center">
@@ -406,32 +391,28 @@
 				    <li><a href="https://presentations.inxpo.com/SharedContent/HTML/VX/TechnicalRequirements.html" target="_blank"> INXPO Terms of Service</a></li>
 				    <li><a href="https://vts.inxpo.com/scripts/Server.nxp?LASCmd=AI:4;F:APIUTILS!10" target="_blank"> INXPO Privacy Policy</a></li>
 				  </ul>
+				</div>
 			</div>
 		</div>
 	</footer>
-	<!-- <img id="fixedLogo" class="img-fluid fixed-logo" style="display: none;" src="./img/founding-sponsors-transparent.png"/> -->
-	
-	</div><!-- /.end main container -->
 	<!--===================================
       FORM MODAL
     ====================================-->
-		
-		<div id="register" class="modal fade">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header modal-register">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-						<h4 class="modal-title text-xs-center">Capitalise on low hanging fruit to identify a ballpark value added activity to beta test.</h4>
-					</div>
-					<iframe id="QRegFrame"frameborder="0" src="https://vts.inxpo.com/scripts/Server.nxp?LASCmd=AI:4;F:QS!10100&ShowKey=33176&GroupID=iCONIC" height="890" scrolling="no"></iframe>
-				</div><!-- /.modal-content -->
-			</div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->		
-
+	<div id="register" class="modal fade">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header modal-register">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title text-xs-center">Capitalise on low hanging fruit to identify a ballpark value added activity to beta test.</h4>
+				</div>
+				<iframe id="QRegFrame"frameborder="0" src="https://vts.inxpo.com/scripts/Server.nxp?LASCmd=AI:4;F:QS!10100&ShowKey=XXXXX" height="890" scrolling="no"></iframe>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
 <script type="text/javascript" src="scripts/jquery-2.2.3.js"></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.countdown.min.js"></script>
 <script type="text/javascript" src="scripts/main.js"></script>
 </body>

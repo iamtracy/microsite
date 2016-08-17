@@ -1,20 +1,15 @@
-  $('#countdown').countdown({
-  date: '09/22/2016 09:00:00'
-  }, function () {
-    alert('We\'re Live!');
-  });
   var card = $('.card-block');
+  console.log(card)
   card.each(function(){    
     var t = $(this).height();
-      if (t > 200) {
+      if (t > 100) {
         card.addClass('card-max');
-    }  
-    card.click(function (e) {
+    }   
+  }).click(function (e) {
       e.preventDefault();
       $(this).toggleClass("card-max");
       $(this).find('i').toggleClass('fa-minus-square-o fa-plus-square-o');
     });
-  }); 
   $('[data-smooth="smooth"]').on('click', function(event) {
     var target;
     var theWindow = $(window).width();
@@ -39,21 +34,16 @@
     var bannerHeight = $('.banner').height();
     var navRegButton = $('#RegLinkNav');
     var fixedLogo = $('#fixedLogo');
-    var fixedLogoNav = $('#fixedLogoNav'); 
-
     if ($(window).scrollTop() >= bannerHeight - navTmobile) {
         if ($(this).width() < 480) {
           navRegButton.show();
-          fixedLogoNav.show();
         } else {
           navRegButton.show(450, 'swing');
-          fixedLogo.show(450, 'swing');
         } 
       }
     else{
         if ($(window).width() < 480) {
           navRegButton.hide();
-          fixedLogo.hide();
         } else {
           navRegButton.hide(450);
         }
